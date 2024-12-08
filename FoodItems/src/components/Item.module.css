@@ -1,0 +1,33 @@
+.kgItem {
+    background-color: rgb(250, 237, 237);
+}
+
+.kgSpan {
+    font-weight: 500;
+    color:rgb(185, 120, 7);
+}
+
+.foodHeading {
+    background-color: rgb(252, 219, 198);
+    color: rgb(85, 17, 17);
+    border-radius: 4px;
+    text-align: center;
+    
+}
+.button{
+    float: right;
+    color: bisque;
+}
+
+.btnClick{
+    background-color: rgb(241, 204, 184);
+}
+
+.btnColor{
+    background-color:rgb(122, 67, 67);
+    
+    border: 1px solid brown;
+    font-size: 15px;
+    border-radius: 4px;
+
+}
