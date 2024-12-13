@@ -6,11 +6,28 @@ input{
 }
 
 .kg-row{
-  margin: 10px 5px;
+  margin: 5px 10px;
 }
 .heading{
   padding: 1rem;
-  background-color: burlywood;
+  margin-bottom: 20px;
+  background-color: rgb(88, 107, 106);
+  width: 450px;
+  height: 60px;
+  color: aliceblue;
+  font-size: 20px;
+ padding-bottom: 5px;
+ border-radius: 5px;
  
+}
+
+.todo-container{
+  border: 1px solid rgb(53, 61, 77);
+  border-radius: 10px;
+  padding: 20px;
+  width: 500px;
+  height: auto;
+  margin: 50px;
+  background-color: rgb(215, 233, 250);
 }
 

@@ -1,11 +1,15 @@
 import TodoItem from "./TodoItem";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./TodoItems.module.css";
-const TodoItems = ({todoItems}) => {
+const TodoItems = ({ todoItems, handleDelete}) => {
     return(
         <div className={styles.itemsContainer}>
            {todoItems.map((item) => (
-                <TodoItem  todoDate={item.dueDate} todoName={item.name} />
+                <TodoItem  key={item.id}
+                id={item.id}
+                todoName={item.name}
+                todoDate={item.dueDate}
+                handleDelete={handleDelete} />
             ))}
           
           

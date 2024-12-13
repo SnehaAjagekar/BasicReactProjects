@@ -1,6 +1,6 @@
 function AppName(){
     return(
-        <h1 className="heading">Todo App</h1>
+        <div className="heading">Todo App</div>
     )
 }
 
