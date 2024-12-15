@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { RiDeleteBin4Line } from "react-icons/ri";
 
 const TodoItem = ({ id, todoName, todoDate, handleDelete }) => {
 
@@ -13,7 +14,7 @@ const TodoItem = ({ id, todoName, todoDate, handleDelete }) => {
                      className="btn btn-danger kg-button  "
                      onClick={() => handleDelete(id)}
                      >
-                        Delete
+                       <RiDeleteBin4Line />
                     </button>
                 </div>
             </div>

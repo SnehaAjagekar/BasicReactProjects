@@ -1,5 +1,6 @@
  import "bootstrap/dist/css/bootstrap.min.css";
  import { useState } from "react";
+ import { IoMdAdd } from "react-icons/io";
 
 function AddTodo({handleClick}) {
     const[todoName, setTodoName] = useState("")
@@ -36,7 +37,8 @@ function AddTodo({handleClick}) {
                     <button type="button" 
                     className="btn btn-success kg-button  "
                     onClick={handleAddClick}>
-                        Add</button>
+                        <IoMdAdd />
+                        </button>
                 </div>
             </div>
         </div>
