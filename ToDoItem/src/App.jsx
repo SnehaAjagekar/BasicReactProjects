@@ -8,15 +8,16 @@ import { useState } from 'react'
 
 
 function App() {
-  const initialTodoItems= [
-    {
-      id: "1",
-      name : "buy Milk",
-    dueDate: "6/12/24 "
-    },
-  ];
+  // const initialTodoItems= [
+  //   {
+  //     id: "1",
+  //     name : "buy Milk",
+  //   dueDate: "6/12/24 "
+  //   },
+  // ];
 
-  const [todoItems, setTodoItems] = useState(initialTodoItems);
+  const [todoItems, setTodoItems] = useState([]);
+  
 
   const handleClick = (newTodo) => {
     const newTodoWithId = {
@@ -36,7 +37,6 @@ function App() {
     <center className="todo-container" >
       <AppName/>
       <AddTodo handleClick={handleClick}/>
-      
       <TodoItems todoItems={todoItems} handleDelete={handleDelete} />
     </center>
   )
