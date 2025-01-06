@@ -1,17 +1,25 @@
 import Post from "./Post";
 import { useContext } from "react";
 import { PostList as PostListContext } from "../store/post-list-store"; // Assuming this is a context
-
+import WelcomeMessage from "./WelcomeMessage";
 const PostList = () => {
-  const { postList } = useContext(PostListContext);
-
+  const { postList, addInitialPost } = useContext(PostListContext);
+  const handleGetPostClick = () =>{
+    fetch('https://dummyjson.com/posts')
+    .then(res => res.json())
+    .then((data) => {
+      addInitialPost(data.posts)
+    });
+  }
   return (
     <>
       {postList && postList.length > 0 ? (
         postList.map((post) => <Post key={post.id} post={post} />)
-      ) : (
-        <p>No posts available</p> // Fallback for empty or undefined postList
-      )}
+      ) 
+      : (
+        <WelcomeMessage onGetPostsClick={handleGetPostClick}/>// Fallback for empty or undefined postList
+      )
+      }
     </>
   );
 };

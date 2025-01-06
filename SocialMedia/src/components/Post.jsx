@@ -5,6 +5,8 @@ import { PostList as PostListContext } from "../store/post-list-store"; // Assum
 const Post = ({ post }) => {
   const { deletePost } = useContext(PostListContext);
 
+  
+
   return (
     <div className="card post-card" style={{ width: "30rem" }}>
       {/* Optional image section, uncomment and provide a valid source if needed */}
